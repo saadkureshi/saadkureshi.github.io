@@ -1,0 +1,19 @@
+.header__my-name {
+  font-family: 'Fredoka One', cursive;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 8rem;
+}
+
+.header__my-intro {
+  display: none;
+  text-align: center;
+}
+
+/* Media breakpoints for Header */
+@media only screen and (max-width: 769px) {
+  .header__my-name-toggle {
+    margin-top: 12rem;
+  }
+}

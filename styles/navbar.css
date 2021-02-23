@@ -1,0 +1,105 @@
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 4rem;
+  width: 100%;
+  background-color: black;
+  color: white;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar__sk-logo {
+  margin-right: auto;
+  cursor: pointer;
+  max-width: 3.5rem;
+  height: auto;
+  padding-right: 2rem;
+  padding-left: 1rem;
+}
+
+.navbar__text-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 25%;
+  padding: 0 1rem;
+  gap: 1rem;
+}
+
+.navbar__contact-icons {
+  display: flex;
+  justify-content: space-around;
+  width: 5%;
+  padding: 0 2rem;
+  gap: 1rem;
+}
+
+.navbar__text-links *, .navbar__contact-icons * {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar__burger-menu {
+  display: none;
+}
+
+.navbar__text-links > *, .navbar__contact-icons > * {
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.navbar__text-links > *:hover, 
+.navbar__contact-icons > *:hover, 
+.navbar__text-links > *:focus, 
+.navbar__contact-icons > *:focus, 
+.navbar__text-links > *:active,
+.navbar__contact-icons > *:active {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+/* Media Breakpoints for Navbar */
+@media only screen and (max-width: 769px) {
+  .navbar__text-links, .navbar__contact-icons {
+    display: none;
+  }
+  .navbar-height-toggle {
+    height: auto;
+  }
+  .navbar__burger-menu {
+    display: block;
+    text-align: right;
+    margin-right: 1rem;
+  }
+  .fa-bars {
+    position: fixed;
+    cursor: pointer;
+    top: 1.5rem;
+    right: 1rem;
+  }
+  .navbar-bm__dropdown-box {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 0.3rem;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .navbar__burger-menu *:not(:first-child) {
+    display: none;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
+  .navbar-bm-toggle *:not(:first-child) {
+    display: flex;
+  }
+}
+
