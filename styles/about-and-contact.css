@@ -38,6 +38,11 @@
   padding: 0.2rem;
 }
 
+.contact-container a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* Buzz Out */
 @keyframes hvr-buzz-out {
   10% {
