@@ -97,4 +97,15 @@ $(function(){
   $(".project-link-sneek").on("click", function() {
     window.open("https://github.com/saadkureshi/LighthouseMarketplace-Buy-Sell-Listing-Website");
   })
+
+  // Jungle Github redirect
+  $(".project-link-jungle").on("click", function() {
+    window.open("https://github.com/saadkureshi/jungle-rails");
+  })
+
+  // TypeCraft Github redirect
+  $(".project-link-typecraft").on("click", function() {
+    window.open("https://github.com/saadkureshi/final-project-lhl");
+  })
+
 })

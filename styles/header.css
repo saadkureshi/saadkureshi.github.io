@@ -14,6 +14,6 @@
 /* Media breakpoints for Header */
 @media only screen and (max-width: 769px) {
   .header__my-name-toggle {
-    margin-top: 12rem;
+    margin-top: 13rem;
   }
 }
